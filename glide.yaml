@@ -5,3 +5,6 @@ import:
 - package: github.com/gorilla/mux
   version: v1.4.0
 - package: github.com/unrolled/render
+- package: github.com/cloudnativego/gogo-engine
+- package: github.com/pborman/uuid
+  version: v1.0

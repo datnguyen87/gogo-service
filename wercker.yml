@@ -53,7 +53,7 @@ deploy:
     - internal/docker-push:
         username: $DOCKER_USERNAME
         password: $DOCKER_PASSWORD
-        cmd: /pipeline/source/hello
+        cmd: /pipeline/source/gogo-service
         port: "8080"
         tag: latest
         repository: answerer/gogo-service

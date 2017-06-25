@@ -24,8 +24,8 @@ func initRoutes(mx *mux.Router, formatter *render.Render) {
 	mx.HandleFunc("/test", testHandler(formatter)).Methods(http.MethodGet)
 }
 
-func testHandler(formater *render.Render) http.HandlerFunc {
+func testHandler(formatter *render.Render) http.HandlerFunc {
 	return func(w http.ResponseWriter, req *http.Request) {
-		formater.JSON(w, http.StatusOK, struct{Test string} {"This is a test"})
+		formatter.JSON(w, http.StatusOK, struct{Test string} {"This is a test"})
 	}
 }
