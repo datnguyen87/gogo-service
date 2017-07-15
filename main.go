@@ -2,7 +2,7 @@ package main
 
 import (
 	"os"
-	"gogo-service/service"
+	"github.com/datnguyen87/gogo-service/service"
 )
 
 func main() {
